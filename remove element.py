@@ -7,4 +7,3 @@ for i in nums:
     if i != val:
         my_list.append(i)
 print ((my_list))
-

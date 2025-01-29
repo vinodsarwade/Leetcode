@@ -21,15 +21,15 @@ print(obj1.removeDuplicates(nums))
 #using for loop
 
 def remove_duplicates(nums):
-    unique_index = 0
-    for i in range(1,len(nums)):     
-        if nums[i] != nums[unique_index]:
-            unique_index += 1
+    j = 0
+    for i in range(1,len(nums)):
+        if nums[i] != nums[j]:
+            j += 1
             # Move the unique element to the next position
-            nums[unique_index] = nums[i]
+            nums[j] = nums[i]
 
-    return unique_index + 1
-nums1 = [1, 1, 2]
-k1 = remove_duplicates(nums1)
-print(k1, nums1[:k1])
+    return j + 1
+nums = [1, 1, 2]
+k1 = remove_duplicates(nums)
+print(k1, nums[:k1])
 

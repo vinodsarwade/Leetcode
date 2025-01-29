@@ -12,7 +12,7 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 
 class Solution():
     def TwoSum(self, num, target):
-        dic = {}               #{2:0}
+        dic = {}                           #{2:0}
         for index, value in  enumerate(num):  #0, 2     1,7
             n= target - value                 #9-2 =7   9-7=2
             if n in dic:

@@ -15,7 +15,6 @@ class Solution(object):
         nums += ([0]*count)
 
 
-    
 # remove zeros and append it to last in array using while loop
 nums = [0,1,0,3,12]
 count = 0
@@ -30,6 +29,8 @@ print(nums + ([0]*count))
 
 
 
+
+
 #using for loop
 nums = [0,1,0,3,0,0,12]
 my_list = []
@@ -40,6 +41,8 @@ for i in nums:
     else:
         my_list.append(i)
 print(my_list + [0]*count)
+
+
 
 
 
