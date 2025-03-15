@@ -26,3 +26,11 @@ target = 9
 print(obj1.TwoSum(num, target))
 
 
+'''bruitforce approach'''
+# def two(num, target):
+#     for i in range(len(num)):
+#         for j in range(1, len(num)):
+#             if num[i] + num[j] == target:
+#                 return i , j
+
+# print(two([2,7,11,15], 9))

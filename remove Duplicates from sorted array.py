@@ -18,6 +18,7 @@ nums = [1,1,2]
 print(obj1.removeDuplicates(nums))
 
 
+
 #using for loop
 
 def remove_duplicates(nums):
