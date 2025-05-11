@@ -12,5 +12,12 @@ def count_dogits(num):
         num = num // 10
         count += 1
     return count
+
 print(count_dogits(1234))
+
+
+
+
+
+
 
