@@ -20,7 +20,7 @@ def remove_duplicates(arr):
             arr[j] = arr[i]
     return j+1
 
-arr = [1,2,3,4,4,4,5,6]
+arr = [1,2,2,3,4,4,4,5,6]
 res = (remove_duplicates(arr))
 print(arr[:res])
 
