@@ -11,6 +11,7 @@ res = (remove_duplicates(arr))
 print(res)
 
 
+
 '''optimal inplace solution'''
 def remove_duplicates(arr):
     j = 0

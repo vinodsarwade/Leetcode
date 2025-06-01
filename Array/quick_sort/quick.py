@@ -1,21 +1,21 @@
-# '''pythonic solution using two extra list to store left and right part'''
-# def quick_sort(arr):
-#     if len(arr) <= 1:
-#         return arr
-#     pivot = arr[0]
-#     left = []
-#     right = [] 
-#     for i in range(1,len(arr)):
-#         if arr[i] <= pivot:                  #smaller element than pivot add in left list
-#             left.append(arr[i])
-#         else:
-#             right.append(arr[i])              #larger element than pivot add it in right list
-#     sorted_left = quick_sort(left)            #then for first recurrsive call pass left array 
-#     sorted_right = quick_sort(right)           #and right part too pass  , it will devide the array untill len(arr) <= 1, if the len(arr) is 1 means array is sorted.
-#     return sorted_left + [pivot] + sorted_right      # and combine them 
+'''pythonic solution using two extra list to store left and right part'''
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[0]
+    left = []
+    right = [] 
+    for i in range(1,len(arr)):
+        if arr[i] <= pivot:                  #smaller element than pivot add in left list
+            left.append(arr[i])
+        else:
+            right.append(arr[i])              #larger element than pivot add it in right list
+    sorted_left = quick_sort(left)            #then for first recurrsive call pass left array 
+    sorted_right = quick_sort(right)           #and right part too pass  , it will devide the array untill len(arr) <= 1, if the len(arr) is 1 means array is sorted.
+    return sorted_left + [pivot] + sorted_right      # and combine them 
 
-# arr = [5,5,3,2,8,1,9]
-# print(quick_sort(arr))
+arr = [5,5,3,2,8,1,9]
+print(quick_sort(arr))
 
 
 '''inplace solution for quick sort'''
