@@ -10,7 +10,7 @@
 # print(s)
 
 
-'''optimal solution'''
+'''optimal solution using two pointer approach'''
 def union(arr1, arr2):
     i, j = 0, 0
     union = []
