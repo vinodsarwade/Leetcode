@@ -1,18 +1,18 @@
-# '''better approach'''
-# def find_number(arr):
-#     my_dict = {}
-#     for i in range(len(arr)):
-#         if arr[i] not in my_dict:
-#             my_dict[arr[i]] = 1
-#         else:
-#             my_dict[arr[i]] +=1
-#     for key, value in my_dict.items():
-#         if my_dict[key] == 1:
-#             return key
+'''better approach'''
+def find_number(arr):
+    my_dict = {}
+    for i in range(len(arr)):
+        if arr[i] not in my_dict:
+            my_dict[arr[i]] = 1
+        else:
+            my_dict[arr[i]] +=1
+    for key, value in my_dict.items():
+        if my_dict[key] == 1:
+            return key
 
-# arr = [4,1,2,1,2]
-# res = find_number(arr)
-# print(res)
+arr = [4,1,2,1,2]
+res = find_number(arr)
+print(res)
 
 
 '''optimal solution for one number appears once and other number appears twise'''

@@ -15,20 +15,20 @@
 # print(res)
 
 
-'''optimal solution '''
-def move_zeros(arr):
-    j = 0
-    for i in range(1, len(arr)):
-        if arr[i] != 0:
-            j+=1
-            arr[j] = arr[i]
+# '''optimal solution '''
+# def move_zeros(arr):
+#     j = 0
+#     for i in range(1, len(arr)):
+#         if arr[i] != 0:
+#             j+=1
+#             arr[j] = arr[i]
 
-    for k in range(j+1, len(arr)):
-        arr[k] = 0
-    return arr
-arr = [1,2,0,0,4,2,0,6,7]
-res = move_zeros(arr)
-print(res)
+#     for k in range(j+1, len(arr)):
+#         arr[k] = 0
+#     return arr
+# arr = [1,2,0,0,4,2,0,6,7]
+# res = move_zeros(arr)
+# print(res)
 
 
 '''more optimal solution'''
