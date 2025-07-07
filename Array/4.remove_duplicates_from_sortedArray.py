@@ -24,6 +24,7 @@ def remove_duplicates(arr):
 arr = [1,2,2,3,4,4,4,5,6]
 res = (remove_duplicates(arr))
 print(arr[:res])
+# print(res)
 
 
 

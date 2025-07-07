@@ -1,4 +1,4 @@
-'''rotata array to left by 1 place'''
+'''rotate array to left by 1 place'''
 def left_rotate(arr):
     temp = arr[0]
     n = len(arr)
@@ -41,7 +41,7 @@ def left_rotate(arr , k):
     return arr[k:] + arr[:k]
 
 my_array= [1,2,3,4,5,6,7]    #[4,5,6,7,1,2,3]
-k = 4
+k = 3
 res = left_rotate(my_array, k)
 print(res)   
 

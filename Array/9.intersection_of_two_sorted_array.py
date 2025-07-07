@@ -18,21 +18,21 @@ res = intersection(arr1, arr2)
 print(res)
 
 
-# '''optimal solution using two pointer approach'''
-# def intersection(arr1, arr2):
-#     i, j = 0, 0
-#     intersection_array = []
-#     while i < len(arr1) and j < len(arr2):
-#         if arr1[i] < arr2[j]:
-#             i +=1
-#         elif arr1[i] > arr2[j]:
-#             j +=1
-#         else:
-#             intersection_array.append(arr1[i])
-#             i +=1
-#             j +=1
-#     return intersection_array
-# arr1 = [1, 2, 2, 3, 3, 4, 5, 6]
-# arr2 = [2, 3, 3, 5, 6, 6, 7]
-# res = intersection(arr1, arr2)
-# print(res)
+'''optimal solution using two pointer approach'''
+def intersection(arr1, arr2):
+    i, j = 0, 0
+    intersection_array = []
+    while i < len(arr1) and j < len(arr2):
+        if arr1[i] < arr2[j]:
+            i +=1
+        elif arr1[i] > arr2[j]:
+            j +=1
+        else:
+            intersection_array.append(arr1[i])
+            i +=1
+            j +=1
+    return intersection_array
+arr1 = [1, 2, 2, 3, 3, 4, 5, 6]
+arr2 = [2, 3, 3, 5, 6, 6, 7]
+res = intersection(arr1, arr2)
+print(res)

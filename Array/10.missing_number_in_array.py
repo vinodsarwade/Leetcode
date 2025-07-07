@@ -14,6 +14,7 @@
 # res  = missing_number_inArray(arr)
 # print(res)
 
+
 # '''optimal solution'''
 # def missing_number_inArray(arr):
 #     sum = 0
