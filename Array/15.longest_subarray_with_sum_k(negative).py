@@ -16,7 +16,7 @@ print(longest_subarray_with_negative(arr ,K))
 
 
 '''optimal solution , we can not use sliding window or two pointer here for negative element.
-so use HashMap + prefix_sum '''
+so use HashMap + prefix_sum  which suitable for both positive and negative elements.'''
 
 def longest_subarray_with_negative(arr, k):
     prefix_sum = {}
@@ -24,7 +24,7 @@ def longest_subarray_with_negative(arr, k):
     max_len = 0
 
     for i in range(len(arr)):
-        current_sum = current_sum + arr[i]
+        current_sum += arr[i]
 
         if current_sum == k:
             max_len = max(max_len, i+1)
@@ -36,7 +36,7 @@ def longest_subarray_with_negative(arr, k):
         if current_sum not in prefix_sum:
             prefix_sum[current_sum] = 1
 
-    return max_len, prefix_sum
+    return max_len
 
 arr = [1, -1, 5, -2, 3]
 k = 3
