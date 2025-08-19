@@ -18,7 +18,7 @@ print(maximum_subarray(arr))
 
 '''first consider max_sum as a smallest number , then iterate over array using single loop and store sum in s
 if the sum > greater than zero then update max_sum.
-but if sum < 0 means negative , then negative element should not be the maximum_subarray _sum
+but if sum < 0 means negative , then negative element should not be the maximum_subarray_sum
 so again update sum to 0 and iterate through next element.
 basically when you find first positive number in array then only sum will be added and consider for next iter.'''
 

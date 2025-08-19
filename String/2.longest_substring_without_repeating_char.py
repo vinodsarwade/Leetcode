@@ -1,3 +1,4 @@
+'''bruteforce approach'''
 def length_of_longest_substring(s):
     n = len(s)
     max_len = 0
@@ -17,7 +18,7 @@ res = length_of_longest_substring(s)
 print(res)
                         
 
-'''optimal'''
+'''optimal 1'''
 def length_of_longest_substring(s):
     char_index = {}
     left = 0
@@ -35,3 +36,22 @@ s = "abcabcbb"
 res = length_of_longest_substring(s)
 print(res)
            
+
+
+'''optimal 2'''
+def length_of_longest_substring(s):
+    seen = set()
+    left = 0
+    max_len = 0
+    for i in range(len(s)):
+        while s[i] in seen:
+            seen.remove(s[left])
+            left +=1
+        seen.add(s[i])
+        max_len = max(max_len, i- left + 1)
+    return max_len
+    
+
+s = "abcabcbb"
+res = length_of_longest_substring(s)
+print(res)
