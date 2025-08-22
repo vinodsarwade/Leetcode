@@ -41,4 +41,3 @@ def longest_subarray_with_negative(arr, k):
 arr = [1, -1, 5, -2, 3]
 k = 3
 print(longest_subarray_with_negative(arr ,k))
-# Output: 4 (subarray: [-1, 5, -2, 3])
